@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #052911;
+    height: 100vh;
+    overflow-y: hidden;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #2bfd01;
+    font-size: 3rem;
+    position: relative;
+}
+
+h1::before {
+    content: "Jaybril";
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    border-right: 1px solid #ffffff;
+    animation: text 4s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes text {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
